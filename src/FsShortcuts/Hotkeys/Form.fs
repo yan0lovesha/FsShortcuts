@@ -1,9 +1,9 @@
-﻿module FsWork.HotKeys.Form
+﻿module FsShortcuts.HotKeys.Form
 
 open System.Windows.Forms
 open System.Drawing
 open System
-open FsWork.HotKeys.Command
+open FsShortcuts.HotKeys.Command
 open System.Text.RegularExpressions
 
 

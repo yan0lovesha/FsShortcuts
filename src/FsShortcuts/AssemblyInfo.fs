@@ -1,4 +1,4 @@
-﻿namespace FsWork.AssemblyInfo
+﻿namespace FsShortcuts.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices

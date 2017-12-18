@@ -1,9 +1,9 @@
-﻿module FsWork.Common.Utility
+﻿module FsShortcuts.Common.Utility
 
 open System.IO
 open System
 open System.Diagnostics
-open FsWork.Common.Log
+open FsShortcuts.Common.Log
 
 let downloadFile url fileName=
     let tempFolder = Path.Combine(__SOURCE_DIRECTORY__, "Download")

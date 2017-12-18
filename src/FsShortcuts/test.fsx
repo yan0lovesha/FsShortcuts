@@ -1,5 +1,5 @@
-﻿#r "bin/Debug/FsWork.dll"
-open FsWork.Screenshot
+﻿#r "bin/Debug/FsShortcuts.dll"
+open FsShortcuts.Screenshot
 
 let screenshotForm = new Form.ScreenshotForm()
 screenshotForm.CaptureScreen()

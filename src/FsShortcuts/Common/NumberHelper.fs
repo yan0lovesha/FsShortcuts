@@ -1,2 +1,2 @@
-﻿module FsWork.Common.NumberHelper
+﻿module FsShortcuts.Common.NumberHelper
 

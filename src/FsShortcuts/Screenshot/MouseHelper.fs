@@ -1,11 +1,11 @@
-﻿module FsWork.Screenshot.MouseHelper
+﻿module FsShortcuts.Screenshot.MouseHelper
 
 open System
 open System.Windows.Forms
 open System.Drawing
 open System.Collections.Generic
 open System.Threading
-open FsWork.Common
+open FsShortcuts.Common
 
 let mutable isEnabledToDraw = true
 let mutable private monitoredControl: Control = null

@@ -1,9 +1,9 @@
-﻿module FsWork.HotKeys.MouseSpeed
+﻿module FsShortcuts.HotKeys.MouseSpeed
 
 open System
-open FsWork.Common
+open FsShortcuts.Common
 open System.Runtime.InteropServices
-open FsWork.Common.Log
+open FsShortcuts.Common.Log
 
 [<DllImport("User32.dll")>]
 //[<return:MarshalAs(UnmanagedType.Bool)>]

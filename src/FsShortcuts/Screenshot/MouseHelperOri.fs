@@ -1,4 +1,4 @@
-﻿module FsWork.Screenshot.MouseHelperOri
+﻿module FsShortcuts.Screenshot.MouseHelperOri
 
 open System.Windows.Forms
 open System.Drawing

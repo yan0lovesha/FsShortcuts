@@ -1,4 +1,4 @@
-﻿module FsWork.HotKeys.Command
+﻿module FsShortcuts.HotKeys.Command
 
 open System.Collections.Generic
 

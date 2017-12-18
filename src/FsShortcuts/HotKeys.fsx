@@ -1,7 +1,7 @@
-﻿#r "bin/Debug/FsWork.dll"
-open FsWork.Screenshot
-open FsWork.HotKeys.Command
-open FsWork.HotKeys
+﻿#r "bin/Debug/FsShortcuts.dll"
+open FsShortcuts.Screenshot
+open FsShortcuts.HotKeys.Command
+open FsShortcuts.HotKeys
 
 Command.commands.AddRange(
     [
@@ -12,4 +12,4 @@ Command.commands.AddRange(
         { HotkeyCommand.Command = "Exit"; HotkeyCommand.Description = "Exit the hotkey app"; Action = Entrance.stop }
     ]
 )
-FsWork.HotKeys.Entrance.start()
+FsShortcuts.HotKeys.Entrance.start()

@@ -1,12 +1,12 @@
-﻿module FsWork.Screenshot.Form
+﻿module FsShortcuts.Screenshot.Form
 
 open System.Windows.Forms
 open System.Drawing
 open System.Drawing.Imaging
 open System
 open System.ComponentModel
-open FsWork.Screenshot
-open FsWork.Common
+open FsShortcuts.Screenshot
+open FsShortcuts.Common
 
 type ScreenshotForm() as this =
     inherit Form()

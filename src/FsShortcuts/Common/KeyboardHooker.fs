@@ -1,9 +1,9 @@
-﻿module FsWork.Common.KeyboardHooker
+﻿module FsShortcuts.Common.KeyboardHooker
 
 
 open System
 open System.Runtime.InteropServices
-open FsWork.Common
+open FsShortcuts.Common
 open System.Windows.Forms
 
 [<StructLayout(LayoutKind.Sequential)>]

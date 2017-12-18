@@ -1,5 +1,5 @@
 ﻿// Provides functions to operate Hosts file
-module FsWork.Common.Hosts
+module FsShortcuts.Common.Hosts
 
 open System
 open System.IO
@@ -19,7 +19,7 @@ let list () =
 
 let openFile () =
     let fileName = "notepad.exe"
-    FsWork.Common.Utility.runProc fileName hostsFilePath None
+    FsShortcuts.Common.Utility.runProc fileName hostsFilePath None
 
 let addEntry (entries: HostEntry list) =
     let entryStrings = entries |> List.map (fun (ip, name) -> String.Format("{0}\t{1}", ip, name))

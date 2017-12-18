@@ -1,7 +1,7 @@
-﻿module FsWork.Common.Installation
+﻿module FsShortcuts.Common.Installation
 
 open System.IO.Compression
-open FsWork.Common
+open FsShortcuts.Common
 
 type Apps = 
     | LinqPad

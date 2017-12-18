@@ -1,9 +1,9 @@
-﻿module FsWork.HotKeys.Entrance
+﻿module FsShortcuts.HotKeys.Entrance
 
 open System.Windows.Forms
-open FsWork.Common
+open FsShortcuts.Common
 open System
-open FsWork.HotKeys.Form
+open FsShortcuts.HotKeys.Form
 open Command
 
 let mutable hookPointer: IntPtr = Unchecked.defaultof<IntPtr>

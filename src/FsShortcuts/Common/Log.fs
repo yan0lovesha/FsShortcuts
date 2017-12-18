@@ -1,4 +1,4 @@
-﻿module FsWork.Common.Log
+﻿module FsShortcuts.Common.Log
 
 type LogType =
 | Info

@@ -1,4 +1,4 @@
-﻿module FsWork.Common.Chrome
+﻿module FsShortcuts.Common.Chrome
 
 open System.Diagnostics
 

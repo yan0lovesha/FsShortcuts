@@ -1,8 +1,8 @@
-﻿module FsWork.Common.Remote
+﻿module FsShortcuts.Common.Remote
 
 open System
 open System.Diagnostics
-open FsWork.Common.Log
+open FsShortcuts.Common.Log
 
 let (private defaultUsername, private defaultPassword) = (@"~\Administrator", @"T!T@n1130")
 
