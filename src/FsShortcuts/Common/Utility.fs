@@ -29,7 +29,7 @@ let downloadFile url fileName=
 let copyToClipboard text =
     System.Windows.Forms.Clipboard.SetText text
 
-let runProc filename args startDir = 
+let runProc filename args startDir waitForExit = 
     let timer = Stopwatch.StartNew()
     let procStartInfo = 
         ProcessStartInfo(
@@ -69,7 +69,7 @@ let runProc filename args startDir =
     printfn "Started %s with pid %i" p.ProcessName p.Id
     p.BeginOutputReadLine()
     p.BeginErrorReadLine()
-    p.WaitForExit()
+    if waitForExit then p.WaitForExit()
     timer.Stop()
     printfn "Finished %s after %A milliseconds" filename timer.ElapsedMilliseconds
     let cleanOut l = l |> Seq.filter (String.IsNullOrEmpty >> not)

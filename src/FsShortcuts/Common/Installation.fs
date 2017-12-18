@@ -21,7 +21,7 @@ let install (app: Apps) =
                                         printfn "Linqpad5 installed in %s" targetDir
                                         System.IO.File.Delete(zipPath)
                                         let appPath = System.IO.Path.Combine(targetDir, "LINQPad.exe")
-                                        Utility.runProc appPath "" None |> ignore
+                                        Utility.runProc appPath "" None true |> ignore
 
                                     Apps.Fiddler, fun _ ->
                                         printfn "%s" "It is not supported."
