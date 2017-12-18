@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsWork", "FsWork\FsWork.fsproj", "{1F5588A6-C366-48A5-BB9B-7C455ABA111E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsShortcuts", "FsShortcuts\FsShortcuts.fsproj", "{1F5588A6-C366-48A5-BB9B-7C455ABA111E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
