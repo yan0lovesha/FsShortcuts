@@ -9,6 +9,8 @@ Command.commands.AddRange(
         { HotkeyCommand.Command = "Mouse Slow"; HotkeyCommand.Description = "Set the mouse speed to 2 for trackball"; Action = fun () -> MouseSpeed.setSpeed 2 }
         { HotkeyCommand.Command = "Mouse Fast"; HotkeyCommand.Description = "Set the mouse speed to 6 for mouse"; Action = fun () -> MouseSpeed.setSpeed 6 }
 
+        { HotkeyCommand.Command = "Screenshot"; HotkeyCommand.Description = "Launch capture screen tool"; Action = fun () -> FsShortcuts.Screenshot.Main.PrScrn() |> ignore }
+
         { HotkeyCommand.Command = "Exit"; HotkeyCommand.Description = "Exit the hotkey app"; Action = Entrance.stop }
     ]
 )

@@ -8,11 +8,13 @@
     <ProjectGuid>1f5588a6-c366-48a5-bb9b-7c455aba111e</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>FsWork</RootNamespace>
-    <AssemblyName>FsWork</AssemblyName>
+    <AssemblyName>FsShortcuts</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>FsShortcuts</Name>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,6 +65,7 @@
     <Compile Include="Screenshot\MouseHelper.fs" />
     <Compile Include="Screenshot\MouseHelperOri.fs" />
     <Compile Include="Screenshot\Form.fs" />
+    <Compile Include="Screenshot\Main.fs" />
     <Compile Include="Hotkeys\MouseSpeed.fs" />
     <Compile Include="Hotkeys\Command.fs" />
     <Compile Include="Hotkeys\Form.fs" />
@@ -96,6 +99,13 @@
     </Reference>
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
+  <Import Project="..\packages\WeiChat.PrScrn.1.0.4\build\WeiChat.PrScrn.targets" Condition="Exists('..\packages\WeiChat.PrScrn.1.0.4\build\WeiChat.PrScrn.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\WeiChat.PrScrn.1.0.4\build\WeiChat.PrScrn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WeiChat.PrScrn.1.0.4\build\WeiChat.PrScrn.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
