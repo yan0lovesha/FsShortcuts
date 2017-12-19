@@ -3,6 +3,7 @@ open FsShortcuts.Screenshot
 open FsShortcuts.HotKeys.Command
 open FsShortcuts.HotKeys
 open FsShortcuts.Common
+open FsShortcuts.Common.Log
 
 Command.commands.AddRange(
     [
@@ -18,4 +19,8 @@ Command.commands.AddRange(
         { HotkeyCommand.Command = "Exit"; HotkeyCommand.Description = "Exit the hotkey app"; Action = Entrance.stop }
     ]
 )
-FsShortcuts.HotKeys.Entrance.start()
+
+Entrance.start()
+Log.logTrace LogType.Info "Started"
+
+System.Windows.Forms.Application.Run()

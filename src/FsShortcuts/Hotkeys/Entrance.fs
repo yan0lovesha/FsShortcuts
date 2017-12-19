@@ -30,3 +30,4 @@ let start () =
 
 let stop () =
     KeyboardHooker.unHook hookPointer |> ignore
+    Environment.Exit 1
